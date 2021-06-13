@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>Semáforo inteligente</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/page.css" rel="stylesheet">
+    <link href="./css/example.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <span class="navbar-brand">Examen Final</span>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+        <h1 class="mt-4">Semáforo inteligente</h1>
+
+        <div class="road-container">
+            <div class="traffic-light green" id="traffic-light-1"></div>
+            <div class="counter green" id="light-counter-1">
+                <span>25</span>
+            </div>
+            <div class="traffic-light red" id="traffic-light-2"></div>
+            <div class="counter red" id="light-counter-2">
+                <span>10</span>
+            </div>
+            <div class="lane" id="lane-1"></div>
+            <div class="lane" id="lane-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm m-4 p-2 border">
+                <p><b> Tráfico calle horizontal </b></p>
+                <div class="form-check form-check-inline">
+                    <div class="mr-5">
+                        <input class="form-check-input" type="radio" name="frecuency-x" data-lane="x" id="x-low" value="low">
+                        <label class="form-check-label" for="x-low">
+                            Bajo
+                        </label>
+                    </div>
+                    <div class="mr-5">
+                        <input class="form-check-input" type="radio" name="frecuency-x" data-lane="x" id="x-medium" value="medium">
+                        <label class="form-check-label" for="x-medium">
+                            Medio
+                        </label>
+                    </div>
+                    <div class="mr-5">
+                        <input class="form-check-input" type="radio" name="frecuency-x" data-lane="x" id="x-high" value="high" checked>
+                        <label class="form-check-label" for="x-high">
+                            Alto
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm m-4 p-2 border">
+                <p><b> Tráfico calle vertical </b></p>
+                <div class="form-check form-check-inline">
+                    <div class="mr-5">
+                        <input class="form-check-input" type="radio" name="frecuency-y" data-lane="y" id="y-low" value="low">
+                        <label class="form-check-label" for="y-low">
+                            Bajo
+                        </label>
+                    </div>
+                    <div class="mr-5">
+                        <input class="form-check-input" type="radio" name="frecuency-y" data-lane="y" id="y-medium" value="medium" checked>
+                        <label class="form-check-label" for="y-medium">
+                            Medio
+                        </label>
+                    </div>
+                    <div class="mr-5">
+                        <input class="form-check-input" type="radio" name="frecuency-y" data-lane="y" id="y-high" value="high">
+                        <label class="form-check-label" for="y-high">
+                            Alto
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Fundamentos de la Teoría de la Computación - Trabajo final</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/Vehicle.js"></script>
+    <script src="./js/Lane.js"></script>
+    <script src="./js/page.js"></script>
+
+</body>
+
+</html>
